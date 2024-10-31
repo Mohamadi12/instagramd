@@ -7,7 +7,8 @@
     text-wrap: balance;
   }
 }
-:root {
+
+:root{
   --red: rgb(207, 33, 66);
   --orange: rgb(230, 173, 77);
 }
