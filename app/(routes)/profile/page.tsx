@@ -3,7 +3,6 @@ import { auth } from "@/auth";
 import { prisma } from "@/db";
 import { CheckIcon, ChevronLeft, CogIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 const ProfilePage = async () => {
   const session = await auth();

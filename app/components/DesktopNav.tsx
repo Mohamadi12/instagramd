@@ -36,7 +36,7 @@ const DesktopNav = () => {
               <UserIcon />
               Profile
             </Link>
-            <Link href={"/"}>
+            <Link href={"/create"}>
               <CameraIcon />
               Create
             </Link>

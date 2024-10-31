@@ -14,7 +14,7 @@ const SettingsForm = ({
   profile: Profile;
 }) => {
   const router = useRouter();
-  const fileRef = useRef<HTMLInputElement>();
+  const fileRef = useRef<HTMLInputElement>(null);
   const [file, setFile] = useState<File | null>(null);
   const [avatarUrl, setAvatarUrl] = useState(profile.avatar);
 
@@ -54,7 +54,7 @@ const SettingsForm = ({
               type="file"
               ref={fileRef}
               className="hidden"
-              onChange={(e) => setFile(e.target.files?.[0])}
+              onChange={(e) => setFile(e.target.files?.[0] || null)}
             />
             <Button
               type="button"
